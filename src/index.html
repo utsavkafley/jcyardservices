@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JC Yard Services</title>
+  <link href="/dist/output.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="container" class="lg:w-1/2 md:w-3/4 md:flex md:flex-col md:mx-auto md">
+    <header class="flex flex-row justify-between bg-primary p-4 text-light w-full">
+      <h1 class="text-xl md:text-2xl font-bold">JC Yard Services</h1>
+      <button
+        class="outline outline-light hover:outline-none hover:bg-secondary text-light font-semibold py-1  md:py-2 px-2 md:px-4  rounded">
+        Get a Quote
+      </button>
+    </header>
+    <section id="home" class="md:flex md:flex-col  md:mx-auto p-4">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">
+        We provide exceptional yard services.
+      </h2>
+      <div class="flex flex-col md:flex-row w-full">
+        <p class="md:w-2/3 text-lg">
+          Welcome to <span class="font-semibold text-primary">JC Yard Services</span>! We offer a range of services
+          to meet
+          your needs. Feel free to use the contact form in the bottom of the
+          page to contact us or get a quote for your project. We are here to help you with your yard needs.
+        </p>
+      </div>
+    </section>
+    <section id="services" class="md:flex md:flex-col md:mx-auto px-4 pt-4 pb-12 bg-gray-100">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Services Offered</h2>
+      <ul
+        class="space-y-4 md:space-y-0 mx-auto md:flex md:flex-wrap md:justify-around lg:justify-center md:gap-8 px-12 text-light text-lg font-semibold w-2/3 md:w-full ">
+        <li class="p-2 md:w-48 lg:w-24 md:h-24  bg-primary rounded hover:bg-secondary">Garden Tilling</li>
+        <li class="p-2 md:w-48 lg:w-24 md:h-24  bg-primary rounded hover:bg-secondary">Trail Cutting</li>
+        <li class="p-2 md:w-48 lg:w-24 md:h-24  bg-primary rounded hover:bg-secondary">Trail Maintenance</li>
+        <li class="p-2 md:w-48 lg:w-24 md:h-24  bg-primary rounded hover:bg-secondary">Tree Trimming</li>
+        <li class="p-2 md:w-48 lg:w-24 md:h-24  bg-primary rounded hover:bg-secondary">Grass Cutting</li>
+        <li class="p-2 md:w-48 lg:w-24 md:h-24  bg-primary rounded hover:bg-secondary">Leaf Clean Up</li>
+        <li class="p-2 md:w-48 lg:w-24 md:h-24  bg-primary rounded hover:bg-secondary">Drive Way Grading</li>
+        <li class="p-2 md:w-48 lg:w-24 md:h-24  bg-primary rounded hover:bg-secondary">Rough Cut Mowing</li>
+        <li class="p-2 md:w-48 lg:w-24 md:h-24  bg-primary rounded hover:bg-secondary">Tractor/Loader Work</li>
+        <li class="p-2 md:w-48 lg:w-24 md:h-24  bg-primary rounded hover:bg-secondary">Skid Steer</li>
+        <li class="p-2 md:w-48 lg:w-24 md:h-24  bg-primary rounded hover:bg-secondary">Mini-Excavator</li>
+      </ul>
+      <!-- Add your services here -->
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="p-4 mb-4 md:flex md: flex-col md:w-1/2 md:mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4 md:text-center">Contact Us </h2>
+      <form class="space-y-4" action="https://formspree.io/YOUR_FORMSPREE_EMAIL" method="POST">
+        <input class="rounded border-2 border-dark bg-gray-100 p-2 w-full" type="text" id="firstname" name="firstname"
+          placeholder="First Name" required>
+
+        <input class="rounded-md border-2 border-dark bg-gray-100 p-2 w-full" type="text" id="lastname" name="lastname"
+          placeholder="Last Name" required>
+
+        <input class="rounded border-2 border-dark bg-gray-100 p-2 w-full" type="email" id="email" name="email"
+          placeholder="Email" required>
+
+        <input class="rounded border-2 border-dark bg-gray-100 p-2 w-full" type="tel" id="phone" name="phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone (Format: 123-456-7890)" required>
+
+        <select class="rounded border-2 border-dark bg-gray-100 p-2 w-full" id="service" name="service" required>
+          <option value="" hidden>-- Type of Service --</option>
+          <option value="Garden Tilling">Garden Tilling</option>
+          <option value="Trail Cutting/Maintenance">Trail Cutting/Maintenance</option>
+          <option value="Tree Trimming">Tree Trimming</option>
+          <option value="Grass Cutting">Grass Cutting</option>
+          <option value="Leaf Clean Up">Leaf Clean Up</option>
+          <option value="Drive Way Grading">Drive Way Grading</option>
+          <option value="Rough Cut Mowing">Rough Cut Mowing</option>
+          <option value="Wood Splitting">Wood Splitting</option>
+          <option value="Tractor/Loader Work">Tractor/Loader Work</option>
+          <option value="Skid Stear">Skid Stear</option>
+          <option value="Mini-Excavator">Mini-Excavator</option>
+        </select>
+
+        <textarea class="rounded border-2 border-dark bg-gray-100 p-2 w-full" id="message" name="message" rows="4"
+          cols="50" placeholder="Message" required></textarea>
+
+        <input class="bg-primary hover:bg-dark text-light font-semibold w-full p-4" type="submit" value="Submit">
+      </form>
+      <!-- Add your contact form or contact information here -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white p-8">
+      <p class="text-center">JC Yard Services 2023 &copy</p>
+    </footer>
+
+  </div>
+  <!-- Header / Get a Quote button -->
+
+
+  <!-- Home section -->
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
