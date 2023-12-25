@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.scss';
 import { Header, Navbar, About, Services, ContactForm, Footer } from './components';
 
