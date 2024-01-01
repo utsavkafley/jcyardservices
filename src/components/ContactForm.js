@@ -1,8 +1,7 @@
 import React from 'react';
-
+import {services} from './services-list';
 const ContactForm = () => {
-    const services = ["Lawn Mowing", "Hedge Trimming", "Garden Maintenance", /* ...other services... */, "Other"];
-
+    console.log(services);
     return (
         <section id="contact" className="p-4 sm:px-24 md:px-32 lg:px-72">
             <h2 className="text-xl font-complementary mb-4">Contact Us</h2>
@@ -15,7 +14,7 @@ const ContactForm = () => {
                 <input type="tel" placeholder="Phone" className="w-full p-2 border border-gray-300 rounded" />
                 <select className="p-2 border border-gray-300 rounded">
                     {services.map((service, index) => (
-                        <option key={index} value={service}>{service}</option>
+                        <option key={index} value={service.title}>{service.title}</option>
                     ))}
                 </select>
                 <textarea placeholder="Description" className="p-2 border border-gray-300 rounded"></textarea>
