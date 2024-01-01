@@ -3,7 +3,7 @@ import { Header, Navbar, About, Services, ContactForm, Footer } from './componen
 
 function App() {
   return (
-    <div className="container mx-auto px-4 sm:px-24 md:px-32 lg:px-72">
+    <div>
       <Header />
       <Navbar />
       <About />

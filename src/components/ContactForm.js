@@ -4,7 +4,7 @@ const ContactForm = () => {
     const services = ["Lawn Mowing", "Hedge Trimming", "Garden Maintenance", /* ...other services... */, "Other"];
 
     return (
-        <section className="p-4">
+        <section className="p-4 sm:px-24 md:px-32 lg:px-72">
             <h2 className="text-xl font-semibold mb-4">Contact Us</h2>
             <form className="flex flex-col space-y-4">
                 <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">

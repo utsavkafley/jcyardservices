@@ -3,11 +3,14 @@ import about from '../images/about.jpg';
 
 const About = () => {
     return (
-        <section className="flex flex-col md:flex-row items-center py-4">
-            <img src={about} alt="About JC Yard Services" className="w-2/5 md:w-2/5 mr-4" />
-            <div className="w-3/5 md:w-3/5">
-                <h2 className="text-xl font-semibold mb-2">About JC Yard Services</h2>
-                <p>Welcome to JCYardServices, a family-owned business specializing in hunting property maintenance, lawn care, and food plot management. With a passion for the outdoors and a commitment to eco-friendly practices, we offer a range of services tailored to enhance and sustain your outdoor spaces. From creating wildlife habitats to meticulous lawn upkeep, our team combines expertise and care to transform your land into a thriving, sustainable, and picturesque environment. Trust us to bring your outdoor dreams to life, with a focus on quality, sustainability, and customer satisfaction.</p>
+        <section className="p-4 sm:px-24 md:px-32 lg:px-72">
+            <h2 className="text-xl font-semibold mb-2">About Us</h2>
+            <div className="flex flex-col md:flex-row items-center">
+                <img src={about} alt="About JC Yard Services" className="md:mr-4 md:w-72" />
+                <p className='md:text-lg'>Welcome to JCYardServices, a family-owned business specializing in hunting property maintenance,
+                     lawn care, and food plot management. With a passion for the outdoors and a commitment to eco-friendly
+                      practices, we offer a range of services tailored to enhance and sustain your outdoor spaces.
+                </p>
             </div>
         </section>
     );
