@@ -6,12 +6,12 @@ module.exports = {
       colors: {
         'orange': '#F46036', 
         'black': '#393D3F', 
-        'white': '#E8EDDF',
+        'white': '#E7EAEE',
         'blue' : '#83BCFF'
       },
       fontFamily: {
-        sans: ['Arial', 'sans-serif'],
-        complementary: ['Lato', 'sans-serif']
+        sans: ['Montserrat', 'sans-serif'],
+        complementary: ['Playfair Display', 'serif']
       }
     },
   },
