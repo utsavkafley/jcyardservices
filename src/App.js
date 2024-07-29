@@ -1,13 +1,20 @@
-import './App.scss';
-import { Header, Navbar, About, Services, ContactForm, Footer } from './components';
+import "./App.css";
+import {
+  About,
+  ContactForm,
+  Footer,
+  Gallery,
+  Header,
+  Services,
+} from "./components";
 
 function App() {
   return (
     <div>
       <Header />
-      <Navbar />
       <About />
       <Services />
+      <Gallery />
       <ContactForm />
       <Footer />
     </div>

@@ -4,17 +4,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'orange': '#F46036', 
-        'black': '#393D3F', 
-        'white': '#E7EAEE',
-        'blue' : '#83BCFF'
+        orange: "#F46036",
+        black: "#393D3F",
+        white: "#FFF",
+        blue: "#83BCFF",
       },
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
-        complementary: ['Playfair Display', 'serif']
-      }
+        sans: ["Montserrat", "sans-serif"],
+        complementary: ["Playfair Display", "serif"],
+      },
     },
   },
   plugins: [],
-}
-
+};

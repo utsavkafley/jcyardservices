@@ -1,16 +1,45 @@
-import React from 'react';
+import { Typography } from "@mui/material";
+import React from "react";
 
 const Navbar = () => {
-    return (
-        <nav className="p-4 sm:px-24 md:px-32 lg:px-72 flex flex-col sm:flex-row justify-between md:items-center bg-black text-white">
-            <div className="flex flex-col sm:flex-row sm:gap-4">
-                <a href="#home" className="hover:text-orange mb-2 sm:mb-0">Home</a>
-                <a href="#services" className="hover:text-orange mb-2 sm:mb-0">Services</a>
-                <a href="#gallery" className="hover:text-orange mb-2 sm:mb-0">Gallery</a>
-                <a href="#contact" className="hover:text-orange">Contact Us</a>
-            </div>
-        </nav>
-    );
+  return (
+    <nav className="text-slate-800">
+      <div className="flex flex-col sm:flex-row sm:gap-4">
+        <a
+          href="#home"
+          className="border-b-4 border-slate-600 hover:border-orange mb-2 sm:mb-0"
+        >
+          <Typography variant="h5" gutterBottom>
+            About us
+          </Typography>
+        </a>
+        <a
+          href="#home"
+          className="border-b-4 border-slate-600 hover:border-orange mb-2 sm:mb-0"
+        >
+          <Typography variant="h5" gutterBottom>
+            Our Services
+          </Typography>
+        </a>
+        <a
+          href="#home"
+          className="border-b-4 border-slate-600 hover:border-orange mb-2 sm:mb-0"
+        >
+          <Typography variant="h5" gutterBottom>
+            Gallery
+          </Typography>
+        </a>
+        <a
+          href="#home"
+          className="border-b-4 border-slate-600 hover:border-orange mb-2 sm:mb-0"
+        >
+          <Typography variant="h5" gutterBottom>
+            Contact us
+          </Typography>
+        </a>
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;
