@@ -10,7 +10,7 @@ const Navbar = () => {
           className="border-b-4 border-slate-600 hover:border-orange mb-2 sm:mb-0"
         >
           <Typography variant="h5" gutterBottom>
-            About us
+            About
           </Typography>
         </a>
         <a
@@ -18,7 +18,7 @@ const Navbar = () => {
           className="border-b-4 border-slate-600 hover:border-orange mb-2 sm:mb-0"
         >
           <Typography variant="h5" gutterBottom>
-            Our Services
+            Services
           </Typography>
         </a>
         <a
@@ -34,7 +34,7 @@ const Navbar = () => {
           className="border-b-4 border-slate-600 hover:border-orange mb-2 sm:mb-0"
         >
           <Typography variant="h5" gutterBottom>
-            Contact us
+            Contact
           </Typography>
         </a>
       </div>

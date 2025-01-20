@@ -1,6 +1,13 @@
-import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import React, { useEffect, useRef, useState } from "react";
+import before1 from "../images/before/1.JPG";
+import before2 from "../images/before/2.JPG";
+import before3 from "../images/before/3.JPG";
+import before4 from "../images/before/4.JPG";
+import after1 from "../images/after/1.JPG";
+import after2 from "../images/after/2.JPG";
+import after3 from "../images/after/3.JPG";
+import after4 from "../images/after/4.JPG";
 
 export const Gallery = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
@@ -26,67 +33,55 @@ export const Gallery = () => {
     };
   }, []);
 
-  const images = [];
-  const uniqueIds = Array.from({ length: 44 }, (_, index) => index + 59);
-
-  uniqueIds.forEach((id) => {
-    if (id % 2 === 0) {
-      images.push({
-        before: `https://picsum.photos/id/${id}/300/200`,
-        after: `https://picsum.photos/id/${id + 1}/300/200`,
-      });
-    }
-  });
+  const images = [
+    {
+      before: before1,
+      after: after1,
+    },
+    {
+      before: before2,
+      after: after2,
+    },
+    {
+      before: before3,
+      after: after3,
+    },
+    {
+      before: before4,
+      after: after4,
+    },
+  ];
 
   const handleThumbnailClick = (index) => {
     setSelectedImageIndex(index);
   };
 
   return (
-    <section
-      id="gallery"
-      className="py-8 px-4 sm:px-24 md:px-32 lg:px-72 bg-orange"
-    >
+    <section id="gallery" className="border-x-2">
       <Typography variant="h3" gutterBottom>
-        View Our Work
+        Our Work
       </Typography>
-      <Grid container spacing={2} className="">
-        <Grid item xs={12}>
-          <Grid container spacing={2}>
-            <Grid item xs={6}>
-              <Typography variant="h6" gutterBottom>
-                Before
-              </Typography>
-              <img
-                src={images[selectedImageIndex].before}
-                alt="Before"
-                style={{ width: "100%" }}
-              />
-            </Grid>
-            <Grid item xs={6}>
-              <Typography variant="h6" gutterBottom>
-                After
-              </Typography>
-              <img
-                src={images[selectedImageIndex].after}
-                alt="After"
-                style={{ width: "100%" }}
-              />
-            </Grid>
-          </Grid>
-        </Grid>
-        <Grid item xs={12}>
-          <div class="gallery-scroll-container" ref={galleryScrollContainerRef}>
-            {images.map((image, index) => (
-              <img
-                src={image.before}
-                onClick={() => handleThumbnailClick(index)}
-                alt=""
-              />
-            ))}
+      <div class="showcase">
+        <div class="before-after">
+          <div>
+            <img src={images[selectedImageIndex].before} alt="Before" />
+            <p>Before</p>
           </div>
-        </Grid>
-      </Grid>
+          <div class="after">
+            <img src={images[selectedImageIndex].after} alt="After" />
+            <p>After</p>
+          </div>
+        </div>
+        <div class="gallery-scroll-container" ref={galleryScrollContainerRef}>
+          {images.map((image, index) => (
+            <img
+              src={image.after}
+              onClick={() => handleThumbnailClick(index)}
+              alt=""
+            />
+          ))}
+        </div>
+      </div>
     </section>
   );
 };

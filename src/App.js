@@ -10,7 +10,7 @@ import {
 
 function App() {
   return (
-    <div>
+    <div class="container">
       <Header />
       <About />
       <Services />

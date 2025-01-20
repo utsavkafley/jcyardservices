@@ -11,18 +11,18 @@ import React from "react";
 import { services } from "./services-list";
 const ContactForm = () => {
   return (
-    <section id="contact" className="p-4 mb-12 sm:px-24 md:px-32 lg:px-72">
-      <Typography variant="h2" gutterBottom>
+    <section id="contact" className="bg-slate-300">
+      <Typography variant="h3" gutterBottom>
         Contact Us
       </Typography>
-      <form className="p-12 flex flex-col space-y-8 bg-slate-300">
+      <form className="sm:px-24 md:px-32 p-12 flex flex-col space-y-8 ">
         <Grid container xs={12}>
           <Grid item xs={6} className="pr-4">
             <TextField
               style={{ width: "100%", margin: "5px" }}
               type="text"
               variant="outlined"
-              label="first name"
+              label="Firstname"
             />
           </Grid>
           <Grid item xs={6}>
@@ -30,7 +30,7 @@ const ContactForm = () => {
               style={{ width: "100%", margin: "5px" }}
               type="text"
               variant="outlined"
-              label="last name"
+              label="Lastname"
             />
           </Grid>
         </Grid>
@@ -40,7 +40,7 @@ const ContactForm = () => {
               style={{ width: "100%", margin: "5px" }}
               type="text"
               variant="outlined"
-              label="email"
+              label="Email"
             />
           </Grid>
           <Grid item xs={6}>
@@ -48,7 +48,7 @@ const ContactForm = () => {
               style={{ width: "100%", margin: "5px" }}
               type="text"
               variant="outlined"
-              label="phone"
+              label="Phone"
             />
           </Grid>
         </Grid>

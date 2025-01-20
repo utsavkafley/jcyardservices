@@ -1,25 +1,23 @@
-import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
 import React from "react";
 import { services } from "./services-list";
-
+import { Typography } from "@mui/material";
 export const Services = () => {
   return (
-    <section
-      id="services"
-      className="px-4 py-8 sm:px-24 md:px-32 lg:px-72 bg-slate-400"
-    >
-      <Typography variant="h3" gutterBottom className="pb-4">
+    <section className="bg-orange text-slate-100">
+      <Typography variant="h3" gutterBottom>
         Our Services
       </Typography>
-      <Grid container spacing={4}>
+      <div class="services">
         {services.map((service) => (
-          <Grid item xs={4} className="border-e-2">
-            <Typography variant="h5">{service.title}</Typography>
-            <Typography variant="h7">{service.description}</Typography>
-          </Grid>
+          <div>
+            <p class="service-title">{service.title}</p>
+            <p class="service-description">
+              {service.description}
+              {service.description}
+            </p>
+          </div>
         ))}
-      </Grid>
+      </div>
     </section>
   );
 };
