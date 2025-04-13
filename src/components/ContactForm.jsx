@@ -5,17 +5,14 @@ import {
   MenuItem,
   Select,
   TextField,
-  Typography,
 } from "@mui/material";
 import React from "react";
 import { services } from "./services-list";
 const ContactForm = () => {
   return (
     <section id="contact" className="bg-slate-300">
-      <Typography variant="h3" gutterBottom>
-        Contact Us
-      </Typography>
-      <form className="sm:px-24 md:px-32 p-12 flex flex-col space-y-8 ">
+      <h3>Contact</h3>
+      <form className="md:px-32 flex flex-col space-y-4 md:space-y-8 ">
         <Grid container xs={12}>
           <Grid item xs={6} className="pr-4">
             <TextField
@@ -58,6 +55,7 @@ const ContactForm = () => {
             {services.map((service, index) => (
               <MenuItem value={service.title}>{service.title}</MenuItem>
             ))}
+            <MenuItem value={"Other"}>Other</MenuItem>
           </Select>
         </FormControl>
         <TextField

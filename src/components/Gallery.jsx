@@ -57,10 +57,8 @@ export const Gallery = () => {
   };
 
   return (
-    <section id="gallery" className="border-x-2">
-      <Typography variant="h3" gutterBottom>
-        Our Work
-      </Typography>
+    <section class="gallery">
+      <h3>Finished Projects</h3>
       <div class="showcase">
         <div class="before-after">
           <div>

@@ -5,20 +5,21 @@ import { Typography } from "@mui/material";
 const About = () => {
   return (
     <section class="about">
-      <Typography variant="h3" gutterBottom>
-        About Us
-      </Typography>
+      <h3>About Us</h3>
       <div class="about-content">
         <div class="about-text">
           <p>
-            Welcome to JCYardServices, a family-owned business specializing in
+            Welcome to JC Yard Services, a family-owned business specializing in
             hunting property maintenance, lawn care, and food plot management.
           </p>
           <br />
-
+          <div class="about-img-mobile">
+            <img src={about} alt="About JC Yard Services" />
+            <br />
+          </div>
           <p>
-            At JCYardServices, we understand the unique needs of hunting
-            properties and the importance of creating an environment thata
+            At JC Yard Services, we understand the unique needs of hunting
+            properties and the importance of creating an environment that
             promotes wildlife health and habitat sustainability.
           </p>
         </div>

@@ -52,6 +52,10 @@ header {
   width: 40%;
 }
 
+.about-img-mobile {
+  display: none;
+}
+
 .about-img img {
   width: 100%;
   height: 100%;
@@ -117,4 +121,161 @@ header {
 .gallery-scroll-container img:hover {
   transform: scale(1.05);
   transition: transform 0.3s;
+}
+
+/* For screens with a maximum width of 798px (common mobile screen size) */
+/* @media only screen and (max-width: 798px) {
+  .container {
+    margin: 0;
+  }
+
+  nav {
+    display: none;
+  }
+
+  section {
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo h1 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: xx-small;
+  }
+
+  .about {
+    padding: 32px;
+  }
+
+  .about h3 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .about-text p {
+    font-size: 0.8rem;
+  }
+
+  .about-img {
+    display: none;
+  }
+
+  .about-img img {
+    height: 50vh;
+  }
+
+  .services {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+
+  .gallery-scroll-container {
+    flex-direction: column;
+    overflow-x: hidden;
+    padding: 10px;
+  }
+
+  .gallery-scroll-container img {
+    height: 150px;
+    margin-bottom: 10px;
+  }
+} */
+
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 20px;
+  }
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    display: none;
+  }
+
+  section h3 {
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .logo {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo h1 {
+    font-size: 0.9rem;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+
+  .logo img {
+    height: 6vh;
+  }
+
+  .about {
+    padding: 10px;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .about-text p {
+    font-size: 0.92rem;
+  }
+
+  .about-img {
+    display: none;
+  }
+
+  .about-img-mobile {
+    display: block;
+  }
+
+  .services {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+
+  .service-title {
+    font-size: 0.8rem;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 4px;
+    box-shadow: 4px 4px 0 white;
+  }
+
+  .service-description {
+    display: none;
+  }
+
+  .gallery {
+    margin: 24px 0px 48px;
+    padding: 0;
+
+    /* border: 4px solid red; */
+  }
+
+  .gallery-scroll-container {
+    height: 40vh;
+  }
+
+  .gallery-scroll-container img {
+    height: 100%;
+  }
+
+  .before-after {
+    display: none;
+  }
+
+  #contact {
+    padding: 10px;
+  }
+
+  footer {
+    font-size: 0.5rem;
+  }
 }

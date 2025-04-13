@@ -15,7 +15,7 @@ export const services = [
       "We provide comprehensive Lawn Care, including year-round mowing, fertilization, and weed control.",
   },
   {
-    title: "Tree Stand and Blind Setup",
+    title: "Hunting Setup",
     description:
       "We install tree stands and hunting blinds at optimal locations for effective hunting.",
   },
