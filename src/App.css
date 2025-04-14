@@ -3,12 +3,13 @@
 }
 
 section {
-  padding: 2rem;
+  padding: 1.2rem;
 }
 
-section h1 {
+section h3 {
   font-size: 2rem;
-  margin-bottom: 2vh;
+  margin-bottom: 24px;
+  text-align: center;
 }
 
 /* HEADER */
@@ -25,17 +26,39 @@ header {
 }
 
 .logo h1 {
-  font-size: 2.3rem;
+  font-size: 3.3rem;
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
 }
 
 .logo img {
   height: 12vh;
 }
 
+nav {
+  margin-bottom: 24px;
+}
+
 /*ABOUT*/
 
+.about {
+  border: 4px solid #f46036;
+  margin: 44px 0px;
+  padding: 24px 24px;
+}
+
+.about h3 {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: -84px;
+  background-color: white;
+  padding: 12px 24px;
+}
+
 .about p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .about-content {
@@ -45,11 +68,11 @@ header {
 }
 
 .about-text {
-  width: 50%;
+  width: 45%;
 }
 
 .about-img {
-  width: 40%;
+  width: 55%;
 }
 
 .about-img-mobile {
@@ -58,7 +81,6 @@ header {
 
 .about-img img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
@@ -80,6 +102,10 @@ header {
 }
 
 /* GALLERY */
+
+.gallery {
+  padding: 44px 0px;
+}
 .before-after {
   display: flex;
   justify-content: space-between;
@@ -100,9 +126,9 @@ header {
   overflow-x: auto;
   padding: 20px;
   margin-left: 0 auto;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4); */
   scrollbar-width: thin; /* Firefox */
-  background-color: aliceblue;
+  background-color: #f1f0ef;
 }
 
 .gallery-scroll-container::-webkit-scrollbar {
@@ -207,8 +233,8 @@ header {
   }
 
   .logo h1 {
-    font-size: 0.9rem;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 1rem;
+    /* font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; */
   }
 
   .logo img {
@@ -217,6 +243,13 @@ header {
 
   .about {
     padding: 10px;
+    border: none;
+    margin: 0;
+  }
+
+  .about h3 {
+    width: fit-content;
+    margin: 0 auto;
   }
 
   .about-text {

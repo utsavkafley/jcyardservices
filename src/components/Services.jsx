@@ -2,7 +2,7 @@ import React from "react";
 import { services } from "./services-list";
 export const Services = () => {
   return (
-    <section className="bg-orange text-slate-100">
+    <section id="services" className="bg-orange text-slate-100">
       <h3>Our Services</h3>
       <div class="services">
         {services.map((service) => (

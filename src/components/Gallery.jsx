@@ -57,7 +57,7 @@ export const Gallery = () => {
   };
 
   return (
-    <section class="gallery">
+    <section id="projects" class="gallery">
       <h3>Finished Projects</h3>
       <div class="showcase">
         <div class="before-after">

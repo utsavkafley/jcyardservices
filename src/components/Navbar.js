@@ -14,7 +14,7 @@ const Navbar = () => {
           </Typography>
         </a>
         <a
-          href="#home"
+          href="#services"
           className="border-b-4 border-slate-600 hover:border-orange mb-2 sm:mb-0"
         >
           <Typography variant="h5" gutterBottom>
@@ -22,15 +22,15 @@ const Navbar = () => {
           </Typography>
         </a>
         <a
-          href="#home"
+          href="#projects"
           className="border-b-4 border-slate-600 hover:border-orange mb-2 sm:mb-0"
         >
           <Typography variant="h5" gutterBottom>
-            Gallery
+            Projects
           </Typography>
         </a>
         <a
-          href="#home"
+          href="#contact"
           className="border-b-4 border-slate-600 hover:border-orange mb-2 sm:mb-0"
         >
           <Typography variant="h5" gutterBottom>

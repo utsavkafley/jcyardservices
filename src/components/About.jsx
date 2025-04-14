@@ -1,6 +1,5 @@
 import React from "react";
 import about from "../images/about.png";
-import { Typography } from "@mui/material";
 
 const About = () => {
   return (
